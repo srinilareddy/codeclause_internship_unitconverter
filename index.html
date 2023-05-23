@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="div-1">
+        <h1>Unit Converter</h1>
+        <div id="container">
+            <div id="conversion-type">
+                <select id="type-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="length">Length</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="time">Time</option>
+                    <option value="weight">Weight</option>
+                </select>
+            </div>
+            <div id="length-conversion" class="hidden">
+                <h2>Length Conversion</h2>
+                <select id="length-unit-1">
+                    <option value="miles">Miles</option>
+                    <option value="kilometers">Kilometers</option>
+                    <option value="meters">Meters</option>
+                    <option value="centimeters">Centimeters</option>
+                </select>
+                <input type="text" id="length-input-1">
+                <p>to</p>
+                <select id="length-unit-2">
+                    <option value="miles">Miles</option>
+                    <option value="kilometers">Kilometers</option>
+                    <option value="meters">Meters</option>
+                    <option value="centimeters">Centimeters</option>
+                </select>
+                <input type="text" id="length-input-2" disabled>
+            </div>
+            <div id="temperature-conversion" class="hidden">
+                <h2>Temperature Conversion</h2>
+                <select id="temperature-unit-1">
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                </select>
+                <input type="text" id="temperature-input-1">
+                <p>to</p>
+                <select id="temperature-unit-2">
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                </select>
+                <input type="text" id="temperature-input-2" disabled>
+            </div>
+            <div id="time-conversion" class="hidden">
+                <h2>Time Conversion</h2>
+                <select id="time-unit-1">
+                    <option value="hours">Hours</option>
+                    <option value="minutes">Minutes</option>
+                    <option value="seconds">Seconds</option>
+                </select>
+                <input type="text" id="time-input-1">
+                <p>to</p>
+                <select id="time-unit-2">
+                    <option value="hours">Hours</option>
+                    <option value="minutes">Minutes</option>
+                    <option value="seconds">Seconds</option>
+                </select>
+                <input type="text" id="time-input-2" disabled>
+            </div>
+            <div id="weight-conversion" class="hidden">
+                <h2>Weight Conversion</h2>
+                <select id="weight-unit-1">
+                    <option value="pounds">Pounds</option>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="tonnes">Tonnes</option>
+                    <option value="grams">Grams</option>
+                </select>
+                <input type="text" id="weight-input-1">
+                <p>to</p>
+                <select id="weight-unit-2">
+                    <option value="pounds">Pounds</option>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="tonnes">Tonnes</option>
+                    <option value="grams">Grams</option>
+                </select>
+                <input type="text" id="weight-input-2" disabled>
+            </div>
+            <button id="convert-button">Convert</button>
+        </div>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
